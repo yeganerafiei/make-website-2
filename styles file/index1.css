@@ -1,0 +1,296 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,500&family=PT+Sans+Narrow&display=swap');
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(120, 189, 245);
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    height: 10vw;
+    background-color: rgb(234, 166, 243);
+    position: relative;
+    top: 0;
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+
+.navbar {
+    width: 80%;
+    height: 100px;
+    /* background-color: rgb(130, 222, 238); */
+    /* padding: 4px 20px; */
+    position: absolute;
+    top: 30px;
+    /* left: 20vh; */
+    right: -2rem;
+    margin-right: -4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+}
+
+.nav {
+    /* background-color: antiquewhite; */
+    display: inline-block;
+    display: flex;
+    margin: 0px 30px;
+    margin-left: 2rem;
+    justify-content: center;
+    width: 80%;
+    height: 50px;
+   
+    /* align-content: center; */
+    align-items: center;
+}
+
+
+.nav li a {
+     font-weight: 400;
+     font-size: 30px;
+     font-family: sans-serif;
+     
+}
+
+.logo  {
+    padding: 2px;
+    position: relative;
+    top: 5px;
+    left: 40px;
+    
+}
+
+.nav li a:hover{
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    transform-origin: top right;
+    transition: ease 0.5s ;
+    margin-top: 20px;
+}
+
+.logo:hover {
+    transform: scale(1.5);
+    transition: ease-in-out 0.5s;
+}
+
+h1 {
+    padding: 5px 15px;
+    position: absolute;
+    top: 28%;
+    left: 11%;
+    font-style: italic;
+    font-size: 50px;
+    font-family: 'Kanit', sans-serif; 
+    /* color: rgb(212, 86, 212) */
+    animation: colorRotate 6s ease 0s infinite;
+}
+
+@keyframes colorRotate {
+    
+        from {
+          color: #00076f;
+        }
+        100% {
+          color: #44008b;
+        }
+        50% {
+          color: #9f45b0;
+        }
+        75% {
+          color: #e54ed0;
+        }
+        10% {
+          color: #ffe4f2;
+        }
+      }
+
+      .name:hover {
+        transform: perspective(300) scale(1, 2);
+      }
+
+      
+
+      main {
+        position: relative;
+      }
+   
+     div > h2{
+        position: absolute;
+        top: 30px;
+        /* left: 150px; */
+        margin-bottom: 200px;
+        background-color: #d35596;
+        display: block;
+        font-size: 60px;
+        font-weight: 800;
+        color: #3d0235ce;
+        border-radius: 20px 0 10px 0;
+        padding: 2px;
+        border: #00076f 1px solid;
+      }
+
+   
+  
+.sec-one {
+    width: 100%;
+    height: 50vh;
+    /* background-image: url(/images/planet-galaxy-space-free-png.webp) ; */
+    background-size: contain;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1px 20px 1px 1px;
+    border-radius: 10px;
+    padding: 3px;
+    justify-content: left;
+}
+
+.div-one {
+   width: 500px;
+   height: 300px;
+   /* background-color: tomato; */
+   padding: 10px;
+   font-family: 'Kanit', sans-serif;
+   font-family: 'PT Sans Narrow', sans-serif;
+   font-weight: 700;
+   margin-top: 1rem;
+   margin-left: 10rem;
+   /* display: inline; */
+}
+
+.intro {
+  padding: 10px;
+  padding-top: 90px;
+  
+  font-family: 'Lexend', sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  word-break: break-word;
+  word-wrap: break-word;
+  font-weight: 400;
+  text-align: left;
+}
+
+
+
+details  {
+  margin-left: 60px;
+  margin-top: 4rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: x-large;
+}
+
+details ol {
+  background-color: #e254ff;
+  line-height: 2rem;
+}
+
+footer {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: gray;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav-footer ul {
+padding: 0;
+margin: 0;
+margin-right: 0;
+}
+.nav-footer ul li {
+  display: inline;
+}
+
+.nav-footer ul li a {
+  padding: 10px;
+  text-decoration: none;
+}
+
+footer p {
+  text-align: center;
+}
+@media  screen and ( width <= 360px ) {
+        
+        .logo { display: none;}
+
+      }
+
+      @media  screen and (max-width: 840px) {
+        h1 { font-size: 20px;}
+        ul .nav {
+            font-size: 15px;
+            padding: 2px 5px;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+      }
+
+      @media  screen and (width < 768px) {
+         
+        .navbar {
+          margin-right: 1rem;
+          display: flex;
+        }
+
+        .na
+
+        .logo {
+          width: 50px;
+          height: 50px;
+        }
+        .name {
+          width: 50px;
+          height: 50px;
+
+        }
+        
+        .sec-one {
+          margin-left: 10px;
+          display: flex;
+          
+        }
+
+        .div-one {
+          left: 0%;
+        }
+
+        .intro {
+          display: flex;
+          display: block;
+          left: auto;
+          padding: 0 3px;
+        }
+
+        .h2 {
+        
+          /* display: none; */
+          /* position: hidden; */
+          width: 100px;
+          height: 50px;
+          left: 0%;
+          font-weight: 100;
+          font-size: medium;
+        }
+
+        .nav-footer { 
+          padding: 3px;
+        }
+      }
